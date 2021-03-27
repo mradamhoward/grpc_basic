@@ -21,18 +21,14 @@ option objc_class_prefix = "HLW";
 
 package distribution;
 
-// The greeting service definition.
 service Mechanism {
-  // Sends a greeting
   rpc contactServer (DistributionRequest) returns (DistributionReply) {}
 }
 
-// The request message containing the user's name.
 message DistributionRequest {
   string message = 1;
 }
 
-// The response message containing the greetings
 message DistributionReply {
   string message = 1;
 }
